@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Registro de Clientes</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/inicio.css">
+</head>
+<body>
+	<selection class="contizq col-md-2">
+			<a href="inicio.html"><button type="button" class="btn btn-default col-md-12 botones">Inicio</button></a>
+			<a href="registro_cliente.html"><button type="button" class="btn btn-default col-md-12 botones">Registrar Cliente</button></a>
+			<a href="cuentas_diarias.html"><button type="button" class="btn btn-default col-md-12 botones">Registro de precio</button></a>
+			<a href="ventas_por_mayor.html"><button type="button" class="btn btn-default col-md-12 botones">Ventas por mayor</button></a>
+			<a href="ventas_por_menor.html"><button type="button" class="btn btn-default col-md-12 botones">Ventas por menor</button></a>
+			<a href="resultado_cuentas.html"><button type="button" class="btn btn-default col-md-12 botones">Resultado de cuentas</button></a>
+			<a href="index.html"><button type="button" class="btn btn-default col-md-12 botones">Salir</button></a>
+		
+	</selection>
+
+	<selection class="col-md-10 cuerpo">
+		<h1 align="center">Registrar Clientes</h1><br>
+		<form class="form-horizontal">
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">Nombres:</label>
+		    <div class="col-sm-9">
+		     	<input type="nombre" class="form-control" id="inputEmail3" placeholder="Nombres">
+		    </div>
+		  </div>
+		   <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-2 control-label">Apellidos:</label>
+		    <div class="col-sm-9">
+		     	<input type="nombre" class="form-control" id="inputEmail3" placeholder="Apellidos">
+		    </div>
+		  </div>
+		  
+		  
+		 </form>
+
+		
+		<form class="docum form-inline">
+		  <div class="form-group">
+		    <label for="exampleInputName2">Seleccione tipo de documento:</label>
+		    <select name="producto" class="form-control">
+				<option>RUC</option>
+				<option>DNI</option>
+			</select>
+		  </div>
+		  <div class="form-group">
+		    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Nro Documento">
+		  </div>
+		 </form>
+		 <button type="button" class="btn btn-default btn-md fecha">
+			  <span class="glyphicon glyphicon-star" aria-hidden="true"></span> Registrar
+		</button>
+		
+	</selection>
+
+
+	<script type="text/javascript" scr="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

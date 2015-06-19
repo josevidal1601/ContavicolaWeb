@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>CONTAVICOLA</title>
+
+		<meta name="description" content="Presentacion de 1er avance proyecto LPOO">
+		<meta name="author" content="Equipo 5">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				
+
+				<section>
+					<img src="img/logo.png" height="258" width="195" alt="logo">
+					<h1>CONTAVICOLA</h1>
+					<h3>Oriented object programming</h3>
+					<h4>Universidad Nacional de Ingeniería</h4>
+					<h4>Facultad de Ingeniería Industrial y Sistemas</h4>
+					<h4>Team number: 5</h4>
+				</section>
+
+				<section>
+					<h2>Integrantes:</h2>
+					<ul>
+						<li>Julca Anaya Hanswen 20121192B</li>
+						<li>Pariona Chuquiure Juan Martin 20134060B</li>
+						<li>Roque Suasnabar Gabriel 20130233J</li>
+						<li>Vidal Flores Jose Carlos 20130078D</li>
+						<li>Zambrano Mosquera Renzo André 20132112E</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Planteamiento del Problema</h2>
+					<p>Las personas dedicadas al rubro trabajan desde las 5 de la mañana, cerrando el negocio aproximadamente a las 3 de la tarde; luego viene el "cuadre" de cuentas, el cual hace a este el trabajo más agotador aún.</p><br>
+					<p>El "cuadre" de cuentas que empieza a las 4 de la tarde se estaría terminando como a las 7 de la noche, absorbiendo una gran cantidad de tiempo del trabajador, en nuestro caso sería el usuario; nuestra aplicación web podría ser de gran apoyo a los sectores avícolas acortando horas de esfuerzo laboral.
+					</p>
+					
+				</section>
+
+				<section>
+					<h2>Problema</h2><br>
+					<p>¿Cómo disminuir la cantidad de horas gastadas  y el esfuerzo realizado en el ajuste de las cuentas diarias del negocio?
+					</p>	
+					<img src="img/pensar.png" >
+				</section>
+
+				<section>
+					<h2>Objetivos</h2><br>
+					<ul>
+						<li>Crear una aplicación web que cumpla con los requerimientos adecuados para facilitar el ingreso de datos, así como también reducir el tiempo en la generación de los balances y resultados de cuenta.
+						</li><br>
+						<li>Crear una base de datos de fácil accesibilidad y mejor seguridad para nuestro usuario.
+						</li>
+					</ul>								
+				</section>
+
+				<section>
+					<h2>Descripción del Negocio</h2><br>
+					<ul>
+						<li>Es un negocio avícola que realiza venta de pollos al por mayor y menor, así como también venta de huevos.
+						</li><br>
+						<li>El negocio compra pollos vivos por contenedores(jabas), para posteriormente realizar el trabajo de pelarlos, también la compra de huevos se realiza por cajas.
+						</li>
+					</ul>					
+				</section>
+
+				<section>
+					<h2>Descripción de la aplicación</h2><br>
+					<ul>
+						<li>Aplicación web diseñada especialmente para solucionar el problema de ajuste de cuentas del negocio.</li><br>
+						<li>Posee una interfaz interactiva, de fácil uso, cuenta con una interfaz de logueo que proporciona seguridad a la aplicación, además de contar con funcionalidades que permitirá satisfacer la necesidad del usuario.</li>
+					</ul>	
+					<p></p>
+					<a href="aplicacion/index.html" target="_blank">Ir a Aplicación</a>
+				</section>
+
+				<section>
+					<h2>Diagrama de Entidad-Relación</h2>
+					<a href="img/diagramaER.jpg" target="_blank"><img src="img/diagramaER.jpg"></a>
+				</section>
+
+				
+				
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

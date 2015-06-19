@@ -1,0 +1,18 @@
+body{
+	background: #C8C8C8;
+}
+#login{
+	width:500px;
+	background-color: #F9FF73;
+	margin: 150px auto;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 20px;
+}
+#login img{
+	width: 100%;
+	margin: 5px 0;
+}
+#login .botonera{
+	text-align: left;
+}
