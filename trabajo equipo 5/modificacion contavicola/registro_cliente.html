@@ -14,7 +14,7 @@
 
 		    function validar()
 		    {	var indocumento= document.getElementById('indocumento');
-			    var patronruc= /^[0-9]{1,}$/;
+			    var patronruc= /^[1-9]{1}[0-9]{10}$/;
 			    var patrondni= /^[0-9]{8}$/;
 			    var opc= document.getElementById('clientedoc');
 			    if(opc.selectedIndex == 0 || opc.selectedIndex== null){indocumento.value='';
