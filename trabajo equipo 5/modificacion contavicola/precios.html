@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8">
-	<title>Costos diarios</title>
+	<title>Precios</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/inicio.css">
 	<link href="img/logo1.ico.ico" type="image/x-icon" rel="shortcut icon" />
@@ -10,18 +10,24 @@
 	<script type="text/javascript">
 
 		    function validar()
-		    {	var incosto= document.getElementById('incosto');
-		    	var injabas= document.getElementById('injabas');
-		    	var inprecioma= document.getElementById('inprecioma');
-		    	var inpreciome= document.getElementById('inpreciome');
+		    {	var incostopo= document.getElementById('incostopo');
+		    	var incantidadpo=document.getElementById('incantidadpo');
+		    	var incostohu=document.getElementById('incostohu');
+		    	var incantidadhu=document.getElementById('incantidadhu');
+		    	var inpreciomapo= document.getElementById('inpreciomapo');
+		    	var inpreciomepo= document.getElementById('inpreciomepo');
+		    	var inpreciohu=document.getElementById('inpreciohu');
 			    var patronfloat= /^[0-9]{1,}[.]?[0-9]{1,2}$/;
 			    var patronint= /^[0-9]{1,}$/;
 
-			    ingreso(patronfloat,inhuevo);
-			    ingreso(patronfloat,inpreciome);
-			    ingreso(patronfloat,inprecioma);			    			   	
-			    ingreso(patronint,injabas);
-			    ingreso(patronfloat,incosto);
+			    ingreso(patronfloat,inpreciohu);	
+			    ingreso(patronfloat,incostohu);
+			    ingreso(patronfloat,incantidadhu);
+			    ingreso(patronfloat,inpreciomepo);
+			    ingreso(patronfloat,inpreciomapo);
+			    ingreso(patronfloat,incostopo);			    			    
+			    ingreso(patronfloat,incantidadpo);
+   			   	
 			}
 		     function mostrardespedida(){
 		    	$('#despedida').modal('show');
@@ -38,7 +44,7 @@
 
 			<a href="inicio.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</button></a>
 			<a href="registro_cliente.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Cliente</button></a>
-			<a href="cuentas_diarias.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Precio</button></a>
+			<a href="precios.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Precios</button></a>
 			<a href="ventas_por_mayor.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Vent. mayor</button></a>
 			<a href="ventas_por_menor.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Vent. menor</button></a>
 			<a href="resultado_cuentas.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Cuentas</button></a>
@@ -81,44 +87,53 @@
 		
 			
 
-		<h1 align="center">Costos Diarios</h1><br><br>
+		<h1 align="center">Precios</h1><br><br>
 		<form class="form-horizontal" id="formulario">
 		  <div class="form-group">
-		    <label  class="col-sm-offset-1 col-sm-3 control-label">Costo de pollo vivo:</label>
-		    <div class="col-sm-6">
-		     	<input type="text" class="form-control" id="incosto" placeholder="S/.">
+		  	<label  class="col-sm-offset-1 col-sm-2 control-label">Cantidad de pollo comprado: </label>
+		    <div class="col-sm-2">
+		     	<input type="text" class="form-control" id="incantidadpo" placeholder="kg.">
+		    </div>
+		    <label class="col-sm-1"></label>		    
+		    <label  class="col-sm-2 control-label">Costo de pollo vivo:</label>
+		    <div class="col-sm-2">
+		     	<input type="text" class="form-control" id="incostopo" placeholder="S/.">
 		    </div>
 		    <label class="col-sm-1">(/kg.)</label>
 		  </div><br>
-		  <div class="form-group">
-		    <label class="col-sm-offset-1 col-sm-3 control-label">Nro de jabas compradas:</label>
-		    <div class="col-sm-6">
-		     	<input type="text" class="form-control" id="injabas" >
+		 <div class="form-group">
+		    <label class="col-sm-offset-1 col-sm-2 control-label">Precio venta de pollo (mayorista): </label>
+		    <div class="col-sm-2">
+		     	<input type="text" class="form-control" id="inpreciomapo" placeholder="S/." >
 		    </div>
-		    <label class="col-sm-1">(u.)</label>
-		  </div><br>
-		  <div class="form-group">
-		    <label class="col-sm-offset-1 col-sm-3 control-label">Precio venta de pollo (mayorista): </label>
-		    <div class="col-sm-6">
-		     	<input type="text" class="form-control" id="inprecioma" placeholder="S/." >
+		    <label class="col-sm-1">(/kg.)</label>		   
+		    <label class="col-sm-2 control-label">Precio venta de pollo (minorista): </label>
+		    <div class="col-sm-2">
+		     	<input type="text" class="form-control" id="inpreciomepo" placeholder="S/." >
 		    </div>
 		    <label class="col-sm-1">(/kg.)</label>
 		  </div><br>
-		 	  
+
 		  <div class="form-group">
-		    <label class="col-sm-offset-1 col-sm-3 control-label">Precio venta de pollo (minorista): </label>
-		    <div class="col-sm-6">
-		     	<input type="text" class="form-control" id="inpreciome" placeholder="S/." >
+		  	<label  class="col-sm-offset-1 col-sm-2 control-label">Cantidad de huevo comprado: </label>
+		    <div class="col-sm-2">
+		     	<input type="text" class="form-control" id="incantidadhu" placeholder="kg.">
+		    </div>
+		    <label class="col-sm-1"></label>		    
+		    <label  class="col-sm-2 control-label">Costo de huevo: </label>
+		    <div class="col-sm-2">
+		     	<input type="text" class="form-control" id="incostohu" placeholder="S/.">
 		    </div>
 		    <label class="col-sm-1">(/kg.)</label>
 		  </div><br>
-		  <div class="form-group">
-		    <label class="col-sm-offset-1 col-sm-3 control-label">Precio de huevo: </label>
-		    <div class="col-sm-6">
-		     	<input type="text" class="form-control" id="inhuevo" placeholder="S/." >
+		 <div class="form-group">
+		    <label class="col-sm-offset-1 col-sm-2 control-label">Precio venta de huevo: </label>
+		    <div class="col-sm-7">
+		     	<input type="text" class="form-control" id="inpreciohu" placeholder="S/." >
 		    </div>
-		    <label class="col-sm-1">(/kg.)</label>
-		  </div><br><br>		  
+		    <label class="col-sm-1">(/kg.)</label>		   
+		 </div><br><br>
+	  
 		  <div class="form-group">
 		   	<div class="col-sm-offset-9 col-sm-3">
 		     	<button type="button" onclick="validar();" class="btn btn-success btn-md fecha">
