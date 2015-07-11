@@ -7,6 +7,7 @@ import java.util.Date;
  */
 public class Cliente {
     private Integer idCliente;
+    private String tipoId;
     private String nombreCliente;
     private String usuarioCreacion;
     private java.util.Date fechaCreacion;
@@ -27,6 +28,14 @@ public class Cliente {
 
     public void setFechaModificacion(Date fechaModificacion) {
         this.fechaModificacion = fechaModificacion;
+    }
+
+    public String getUsuarioModificacion() {
+        return usuarioModificacion;
+    }
+
+    public void setUsuarioModificacion(String usuarioModificacion) {
+        this.usuarioModificacion = usuarioModificacion;
     }
 
     public Date getFechaCreacion() {
@@ -53,11 +62,11 @@ public class Cliente {
         this.nombreCliente = nombreCliente;
     }
 
-    public String getUsuarioModificacion() {
-        return usuarioModificacion;
+    public String getTipoId() {
+        return tipoId;
     }
 
-    public void setUsuarioModificacion(String usuarioModificacion) {
-        this.usuarioModificacion = usuarioModificacion;
+    public void setTipoId(String tipoId) {
+        this.tipoId = tipoId;
     }
 }

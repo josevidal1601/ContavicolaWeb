@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Resultado de Cuentas</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/inicio.css">
+	<link href="img/logo1.ico.ico" type="image/x-icon" rel="shortcut icon" />
+	<script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+	<selection class="contizq col-md-2">
+	<script type="text/javascript">
+
+		     function mostrardespedida(){
+		    	$('#despedida').modal('show');
+		    }
+
+		    function saliendo(){
+		    	var form=document.getElementById('sali');
+		    	form.submit();
+		    }
+    </script>			
+			<a href="inicio.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Inicio</button></a>
+			<a href="registro_cliente.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Cliente</button></a>
+			<a href="precios.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> Precios</button></a>
+			<a href="ventas_por_mayor.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Vent. mayor</button></a>
+			<a href="ventas_por_menor.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Vent. menor</button></a>
+			<a href="resultado_cuentas.html"><button type="button" class="btn btn-default col-md-12 botones"><span class="glyphicon glyphicon-file" aria-hidden="true"></span> Cuentas</button></a>
+			<a href="#"><button type="button" class="btn btn-default col-md-12 botones" onclick="mostrardespedida();"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Salir</button></a>
+
+		<div class="modal fade" id="despedida">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">Mensaje</h4>
+		      </div>
+		      <div class="modal-body">
+	        <h4>Gracias por tu visita, vuelva pronto!</h4>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="saliendo();">Aceptar</button>
+		      </div>
+		    </div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+	</selection>
+
+	<selection class="col-md-10 cuerpo">
+
+		<div class="contenido">
+
+		<form class="form-horizontal">
+		  <div class="form-group">
+				<div class="col-sm-3">
+					<h3><span id="reloj" class="label label-primary glyphicon glyphicon-time" style="font-size:18px;"> </span></h3>
+				</div>
+				<div class="col-sm-offset-5 col-sm-4" align="right"><h3><span class="label label-primary glyphicon glyphicon-calendar" style="font-size:18px;"> <script type="text/javascript">fecha();</script></span></h3>
+				</div>					
+		   </div>
+		  
+		 </form>
+		
+
+		<h1 align="center">Resultados de Cuenta</h1><br>
+		<div align="center"> <button type="button" class="btn btn-success btn-lg"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  Ver Resultado de Cuentas del Dia</button></div><br><br><br>
+
+		<form class="form-horizontal" id="formulario">
+		  <div class="form-group">
+		    <label class="col-sm-offset-1 col-sm-3 control-label">Egresos totales:</label>
+		    <div class="col-sm-offset-1 col-sm-4">
+		     	<input type="nombre" class="form-control" id="inputEmail3" placeholder="S/." readonly>
+		    </div>
+		  </div><br>
+
+		  <div class="form-group">
+		    <label class="col-sm-offset-1 col-sm-3 control-label">Ingresos totales:</label>
+		    <div class="col-sm-offset-1 col-sm-4">
+		     	<input type="nombre" class="form-control" id="inputEmail3" placeholder="S/." readonly>
+		    </div>
+		  </div><br>
+
+		  <div class="form-group">
+		    <label class="col-sm-offset-1 col-sm-3 control-label">Utilidad neta: </label>
+		    <div class="col-sm-offset-1 col-sm-4">
+		     	<input type="nombre" class="form-control" id="inputEmail3 "placeholder="S/." readonly>
+		    </div>
+		  </div><br>
+
+		  <div class="form-group">
+		    <label class="col-sm-offset-1 col-sm-3 control-label">Cantidad vendida de Pollos: </label>
+		    <div class="col-sm-offset-1 col-sm-4">
+		     	<input type="nombre" class="form-control" id="inputEmail3 "placeholder="Kg." readonly>
+		    </div>
+		  </div><br>
+
+		  <div class="form-group">
+		    <label class="col-sm-offset-1 col-sm-3 control-label">Cantidad comprada de Pollos: </label>
+		    <div class="col-sm-offset-1 col-sm-4">
+		     	<input type="nombre" class="form-control" id="inputEmail3 "placeholder="Kg." readonly>
+		    </div>
+		  </div><br>
+		 	
+		 		  
+		 </form>
+	
+		</div>
+	</selection>
+
+	<form action="index.html" method="post" id="sali"></form>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>

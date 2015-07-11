@@ -8,10 +8,10 @@ import java.util.Date;
 public class Producto {
     private String nombreProducto;
     private Integer idProducto;
-    private String estadoProducto;
+    private Boolean estadoProducto;
     private Float precioMayor;
     private Float precioMenor;
-    private Integer cantidadMinimaMayor;
+    private Float cantidadMinimaMayor;
     private String usuarioCreacion;
     private java.util.Date fechaCreacion;
     private String usuarioModificacion;
@@ -49,11 +49,11 @@ public class Producto {
         this.usuarioCreacion = usuarioCreacion;
     }
 
-    public Integer getCantidadMinimaMayor() {
+    public Float getCantidadMinimaMayor() {
         return cantidadMinimaMayor;
     }
 
-    public void setCantidadMinimaMayor(Integer cantidadMinimaMayor) {
+    public void setCantidadMinimaMayor(Float cantidadMinimaMayor) {
         this.cantidadMinimaMayor = cantidadMinimaMayor;
     }
 
@@ -73,11 +73,19 @@ public class Producto {
         this.precioMenor = precioMenor;
     }
 
-    public String getEstadoProducto() {
+    public Float getPrecioMayor() {
+        return precioMayor;
+    }
+
+    public void setPrecioMayor(Float precioMayor) {
+        this.precioMayor = precioMayor;
+    }
+
+    public Boolean getEstadoProducto() {
         return estadoProducto;
     }
 
-    public void setEstadoProducto(String estadoProducto) {
+    public void setEstadoProducto(Boolean estadoProducto) {
         this.estadoProducto = estadoProducto;
     }
 
@@ -87,13 +95,5 @@ public class Producto {
 
     public void setIdProducto(Integer idProducto) {
         this.idProducto = idProducto;
-    }
-
-    public Float getPrecioMayor() {
-        return precioMayor;
-    }
-
-    public void setPrecioMayor(Float precioMayor) {
-        this.precioMayor = precioMayor;
     }
 }

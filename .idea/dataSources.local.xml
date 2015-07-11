@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Oracle - xe@localhost" uuid="d4656208-870a-48f8-9703-4b9ec7435464">
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>sys as sysdba</user-name>
+    </data-source>
+  </component>
+</project>

@@ -8,7 +8,7 @@ import java.util.Date;
 public class Pedido {
     private Integer idPedido;
     private java.util.Date fechaPedido;
-    private Integer cantidad;
+    private Float cantidad;
     private Float precioUnitario;
     private Float precioTotal;
     private String usuarioCreacion;
@@ -48,20 +48,20 @@ public class Pedido {
         this.fechaCreacion = fechaCreacion;
     }
 
-    public String getUsuarioCreacion() {
-        return usuarioCreacion;
-    }
-
-    public void setUsuarioCreacion(String usuarioCreacion) {
-        this.usuarioCreacion = usuarioCreacion;
-    }
-
     public Float getPrecioTotal() {
         return precioTotal;
     }
 
     public void setPrecioTotal(Float precioTotal) {
         this.precioTotal = precioTotal;
+    }
+
+    public String getUsuarioCreacion() {
+        return usuarioCreacion;
+    }
+
+    public void setUsuarioCreacion(String usuarioCreacion) {
+        this.usuarioCreacion = usuarioCreacion;
     }
 
     public Float getPrecioUnitario() {
@@ -72,19 +72,19 @@ public class Pedido {
         this.precioUnitario = precioUnitario;
     }
 
+    public Float getCantidad() {
+        return cantidad;
+    }
+
+    public void setCantidad(Float cantidad) {
+        this.cantidad = cantidad;
+    }
+
     public Date getFechaPedido() {
         return fechaPedido;
     }
 
     public void setFechaPedido(Date fechaPedido) {
         this.fechaPedido = fechaPedido;
-    }
-
-    public Integer getCantidad() {
-        return cantidad;
-    }
-
-    public void setCantidad(Integer cantidad) {
-        this.cantidad = cantidad;
     }
 }
