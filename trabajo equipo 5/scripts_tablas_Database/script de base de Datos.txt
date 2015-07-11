@@ -1,0 +1,64 @@
+create TABLE Cliente(
+  idCliente NUMBER(11,0),
+  tipoId VARCHAR2(5),
+  nombreCliente VARCHAR2(250),
+  usuarioCreacion VARCHAR2(150),
+  fechaCreacion DATE,
+  usuarioModificacion VARCHAR2(150),
+  fechaModificacion DATE
+);
+
+INSERT  INTO Cliente(idCliente,tipoId, nombreCliente, usuarioCreacion, fechaCreacion, usuarioModificacion, fechaModificacion)
+VALUES(76570358,'dni','Roberto Gomez','admin',sysdate,'admin',sysdate);
+
+CREATE TABLE Pedido(
+  idPedido NUMBER(5,0),
+  fechaPedido DATE,
+  cantidad NUMBER(8,3),
+  precioUnitario NUMBER(8,2),
+  precioTotal NUMBER(8,2),
+  usuarioCreacion VARCHAR2(150),
+  fechaCreacion DATE,
+  usuarioModificacion VARCHAR2(150),
+  fechaModificacion DATE
+);
+
+INSERT INTO Pedido(idPedido, fechaPedido, cantidad, precioUnitario, precioTotal, usuarioCreacion, fechaCreacion, usuarioModificacion, fechaModificacion)
+VALUES (1,to_date('18-06-2015','DD-MM-YYYY'),3,4.5,13.5,'admin',sysdate,'admin',sysdate);
+
+CREATE TABLE Producto(  idProducto NUMBER(5,0),
+  nombreProducto VARCHAR2(150),
+  estadoProducto NUMBER(1,0),
+  precioMayor NUMBER(8,2),
+  precioMenor NUMBER(8,2),
+  cantidadMinMayor NUMBER(8,3),
+  usuarioCreacion VARCHAR2(150),
+  fechaCreacion DATE,
+  usuarioModificacion VARCHAR2(150),
+  fechaModificacion DATE
+);
+
+INSERT INTO Producto(idProducto, nombreProducto, estadoProducto, precioMayor, precioMenor, cantidadMinMayor, usuarioCreacion, fechaCreacion, usuarioModificacion, fechaModificacion)
+VALUES (100,'pollo',1,4.5,5.5,15,'admin',sysdate,'admin',sysdate);
+
+CREATE TABLE Usuario(
+  idUsuario VARCHAR2(150),
+  contraseñaUsuario VARCHAR2(150),
+  usuarioCreacion VARCHAR2(150),
+  fechaCreacion DATE,
+  usuarioModificacion VARCHAR2(150),
+  fechaModificacion DATE
+);
+
+INSERT INTO Usuario(idUsuario, contraseñaUsuario, usuarioCreacion, fechaCreacion, usuarioModificacion, fechaModificacion)
+VALUES('admin','admin1234','admin',sysdate,'admin',sysdate);
+
+CREATE TABLE Operacion(
+  idOperacion NUMBER(5,0),
+  tipoOperacion VARCHAR2(150),
+  montoOperacion NUMBER(8,2),
+  tipoMovimiento VARCHAR2(150)
+);
+
+INSERT INTO Operacion(idOperacion, tipoOperacion, montoOperacion, tipoMovimiento)
+VALUES(01,'venta',200,'ingreso');
